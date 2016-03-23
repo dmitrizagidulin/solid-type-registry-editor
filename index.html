@@ -9,9 +9,9 @@
     <!-- Solid Demo template/stylesheet -->
     <link rel="stylesheet" href="./css/app.css">
     <!-- Import RDFLib dependency. Creates a $rdf global variable -->
-    <script src="https://linkeddata.github.io/rdflib.js/archive/rdflib-0.5.0.min.js"></script>
+    <script src="https://solid.github.io/releases/rdflib.js/rdflib-0.5.0.min.js"></script>
     <!-- Import Solid.js itself -->
-    <script src="https://solid.github.io/solid.js/dist/solid-0.13.0.min.js"></script>
+    <script src="https://solid.github.io/releases/solid.js/solid-0.13.0.min.js"></script>
     <script src="./app.js"></script>
   </head>
   <body>
@@ -20,5 +20,23 @@
         <h2>Registry Editor</h2>
       </div>
     </div><!-- / page's .container -->
+    <div class="demo-section">
+  <h3>Login</h3>
+    <form>
+      <div class="form-group">
+        <label>Current User:</label>
+
+      </div>
+      <p>Log in using WebID+TLS:</p>
+      <div class="form-group">
+        <label for="webIdUri">WebID URI:</label>
+        <input type="text" class="form-control" id="webIdUri" placeholder="https://test.databox.me/profile/card#me">
+      </div>
+      <!-- See the loginTest() function below -->
+      <button type="button" class="btn btn-primary"
+        id="login">Log In</button>
+    </form>
+</div> <!-- / Login Test section -->
+
   </body>
 </html>
